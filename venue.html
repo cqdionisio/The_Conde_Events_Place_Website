@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Our Venue | The Conde Events Place</title>
+  <meta name="description" content="Explore The Conde Events Place: event spaces, capacity, facilities, rental information, and location in Taguig. Inquire about availability for your date.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Our Venue | The Conde Events Place">
+  <meta property="og:description" content="Event spaces, facilities, and rental information.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="venue">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <noscript><p class="container">Please turn on JavaScript to view this website's content.</p></noscript>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Our Venue</h1>
+        <p>A place to celebrate life's special moments.</p>
+      </div>
+    </section>
+
+    <!-- ===== INTRO (edit in js/config.js > venue.intro) ===== -->
+    <section class="section" aria-labelledby="intro-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">About the Venue</p>
+          <h2 id="intro-title">The Conde Events Place</h2>
+          <hr class="divider">
+          <div data-render="venue-intro"></div>
+        </div>
+        <!-- Venue photos (edit in js/config.js > venue.photos; files in assets/images/venue/) -->
+        <div class="grid grid-3" data-render="venue-photos"></div>
+      </div>
+    </section>
+
+    <!-- ===== EVENT SPACES + CAPACITY (edit in js/config.js > venue.spaces) ===== -->
+    <section class="section section--alt" aria-labelledby="spaces-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Event Spaces</p>
+          <h2 id="spaces-title">Available Spaces and Capacity</h2>
+        </div>
+        <p class="sample-note" data-sample>Sample information: the spaces and capacities below are placeholders. Replace them with your venue's real details.</p>
+        <div class="grid grid-3" data-render="venue-spaces"></div>
+      </div>
+    </section>
+
+    <!-- ===== FACILITIES + EQUIPMENT (edit in js/config.js > venue.amenities) ===== -->
+    <section class="section section--dark" aria-labelledby="amenities-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Facilities</p>
+          <h2 id="amenities-title">Facilities, Equipment and Amenities</h2>
+        </div>
+        <p class="sample-note" data-sample>Sample list: keep only the facilities and equipment your venue actually offers.</p>
+        <ul class="chips" data-render="venue-amenities"></ul>
+      </div>
+    </section>
+
+    <!-- ===== RENTAL INFO + ACCESSIBILITY (edit in js/config.js > venue.rental / venue.accessibility) ===== -->
+    <section class="section" aria-labelledby="rental-title">
+      <div class="container grid grid-2">
+        <div class="info-block reveal">
+          <h2 id="rental-title">Venue Rental Information</h2>
+          <ul data-render="venue-rental"></ul>
+        </div>
+        <div class="info-block reveal">
+          <h2>Accessibility and Location</h2>
+          <ul data-render="venue-access"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== MAP (built from the address in js/config.js > business.address) ===== -->
+    <section class="section section--alt" aria-labelledby="location-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Location</p>
+          <h2 id="location-title">Find the Venue</h2>
+          <address class="address-block" data-bind="business.address"></address>
+          <p>&nbsp;</p>
+          <div class="btn-row">
+            <a class="btn btn-outline" data-link="directions" href="#" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+        <div class="map-wrap" data-render="map"></div>
+      </div>
+    </section>
+
+    <!-- ===== CALL TO ACTION ===== -->
+    <section class="section section--dark cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Ask About Availability</h2>
+        <p>Tell us your preferred date and event type and our team will get back to you to discuss availability.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="inquire.html">Inquire About Availability</a>
+          <a class="btn btn-light" href="packages.html">View Our Packages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

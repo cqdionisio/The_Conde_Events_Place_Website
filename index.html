@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: page title and description (shown in Google results and browser tabs) -->
+  <title>The Conde Events Place | Event Venue for Birthdays, Weddings and More</title>
+  <meta name="description" content="The Conde Events Place is an event venue in Taguig for birthdays, christenings, wedding receptions, anniversaries, and family reunions. Explore the venue, services, and packages, then send an inquiry.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="The Conde Events Place">
+  <meta property="og:description" content="A venue for celebrating life's special moments.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="home">
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- Header + menu are built automatically by js/main.js (menu items: js/config.js > nav) -->
+  <div id="site-header"></div>
+
+  <main id="main">
+    <noscript><p class="container">Please turn on JavaScript to view this website's content.</p></noscript>
+
+    <!-- ===== HERO =====
+         Hero photo: replace assets/images/hero-venue.jpg with your own photo (same file name),
+         ideally a wide landscape photo about 1920 x 1080 pixels. -->
+    <section class="hero" aria-labelledby="hero-title">
+      <img class="hero-bg" src="assets/images/hero-venue.jpg" alt="Sample placeholder image of the event venue. Replace with your own venue photo." width="1920" height="1080" fetchpriority="high">
+      <div class="container hero-inner">
+        <img class="hero-logo" src="assets/images/logo.jpg" alt="The Conde Events Place logo" width="190" height="190">
+        <!--<h1 id="hero-title" data-bind="business.name">THE CONDE EVENTS PLACE</h1> -->
+            <h1 id="hero-title">THE CONDE <h2>EVENTS PLACE</h2></h1>
+        <p class="tagline" data-bind="business.tagline">We'll go above and beyond your expectations for every occasion.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="venue.html">Explore Our Venue</a>
+          <a class="btn btn-light" href="packages.html">View Our Packages</a>
+          <a class="btn btn-light" href="inquire.html">Book Your Event</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== WELCOME / INTRO (EDIT the text freely) ===== -->
+    <section class="section" aria-labelledby="welcome-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Welcome</p>
+          <h2 id="welcome-title">Welcome to The Conde Events Place</h2>
+          <p>Welcome to The Conde Events Place, a venue for celebrating life's special moments.</p>
+          <p>Whether you're planning a birthday party, christening, wedding reception, anniversary, family reunion, or another special celebration, we aim to help make your occasion memorable.</p>
+          <p>Explore our venue, discover our services, and find event arrangements that suit your needs and budget. Contact us to discuss your event requirements and learn more about our available options.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="venue.html">Explore Our Venue</a>
+            <a class="btn btn-outline" href="inquire.html">Book Your Event</a>
+          </div>
+        </div>
+        <figure class="photo-card reveal">
+          <img src="assets/images/venue/venue-sample-1.jpg" alt="Sample placeholder image of the venue interior. Replace with your own photo." width="1200" height="800" loading="lazy">
+        </figure>
+      </div>
+    </section>
+
+
+    <!-- ===== WHY CHOOSE US (edit in js/config.js > highlights) ===== -->
+    <section class="section section--dark" aria-labelledby="why-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Why Choose Us</p>
+          <h2 id="why-title">Why Choose The Conde Events Place?</h2>
+          <hr class="divider">
+        </div>
+        <!-- <p class="sample-note" data-sample>Sample wording: confirm that each highlight below is accurate for your venue before publishing.</p> -->
+        <div class="grid grid-4" data-render="highlights"></div>
+        <ul class="chips mt-2" aria-label="Event types we host" data-render="event-types"></ul>
+      </div>
+    </section>
+
+    <!-- ===== SERVICES PREVIEW (edit in js/config.js > services; data-limit = how many to show) ===== -->
+    <section class="section" aria-labelledby="services-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Services</p>
+          <h2 id="services-title">Everything for Your Celebration</h2>
+          <p>Venue rental plus optional extras to help bring your event together.</p>
+        </div>
+        <div class="grid grid-3" data-render="services" data-limit="6"></div>
+        <p class="text-center mt-2"><a class="btn btn-outline" href="services.html">See All Services</a></p>
+      </div>
+    </section>
+
+    <!-- ===== FEATURED PACKAGES (edit in js/config.js > packages) ===== -->
+    <section class="section section--alt" aria-labelledby="packages-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Packages</p>
+          <h2 id="packages-title">Featured Event Packages</h2>
+          <p>Sample packages for different occasions and budgets.</p>
+        </div>
+        <p class="sample-note" data-sample>All prices and inclusions shown are samples only and must be confirmed before publishing.</p>
+        <div class="grid grid-3" data-render="packages" data-compact="true" data-limit="3"></div>
+        <p class="text-center mt-2"><a class="btn btn-outline" href="packages.html">Compare All Packages</a></p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY PREVIEW (photos marked featured: true in js/config.js > gallery) ===== -->
+    <section class="section section--dark" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Explore Our Event Gallery</h2>
+          <p>Browse our gallery for inspiration for your next celebration. Discover venue arrangements, event decorations, table settings, and celebration themes.</p>
+        </div>
+        <div class="grid grid-3" data-render="gallery" data-featured="true"></div>
+        <p class="text-center mt-2"><a class="btn btn-light" href="gallery.html">View Full Gallery</a></p>
+      </div>
+    </section>
+
+    <!-- ===== TESTIMONIALS (SAMPLE content; edit or delete in js/config.js > testimonials) ===== -->
+    <section class="section section--alt" aria-labelledby="testimonials-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Testimonials</p>
+          <h2 id="testimonials-title">What Customers May Say</h2>
+          <p>These are sample testimonials. Replace them with genuine reviews before publishing.</p>
+        </div>
+        <div class="grid grid-3" data-render="testimonials"></div>
+      </div>
+    </section>
+
+    <!-- ===== CONTACT + MAP (details come from js/config.js > business) ===== -->
+    <section class="section" aria-labelledby="contact-title">
+      <div class="container split">
+        <div>
+          <p class="eyebrow">Visit Us</p>
+          <h2 id="contact-title">Contact Us and Book Your Event</h2>
+          <p>Planning a special occasion? Contact The Conde Events Place to discuss your preferred date, event requirements, venue rental, packages, and additional services.</p>
+          <p>Submit an inquiry through our website, and our team will assist you with the next steps.</p>
+          <ul class="contact-list">
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-pin.svg" alt="" width="20" height="20"></span><address class="address-block" data-bind="business.address"></address></li>
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-phone.svg" alt="" width="20" height="20"></span><a data-link="tel" data-bind="business.phoneDisplay" href="#"></a></li>
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-email.svg" alt="" width="20" height="20"></span><a data-link="mail" data-bind="business.email" href="#"></a></li>
+            <li data-link-wrap="facebook"><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/facebook.svg" alt="" width="20" height="20"></span><a data-link="facebook" href="#" target="_blank" rel="noopener">Facebook Page</a></li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="inquire.html">Send an Inquiry</a>
+            <a class="btn btn-outline" data-link="directions" href="#" target="_blank" rel="noopener">Get Directions</a>
+          </div>
+        </div>
+        <div class="map-wrap" data-render="map"></div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer is built automatically by js/main.js -->
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

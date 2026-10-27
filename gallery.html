@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Gallery | The Conde Events Place</title>
+  <meta name="description" content="Browse the event gallery for The Conde Events Place: venue arrangements, decorations, table settings, and celebration themes for birthdays, weddings, christenings, and more.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Event Gallery | The Conde Events Place">
+  <meta property="og:description" content="Inspiration for your next celebration.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="gallery">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <noscript><p class="container">Please turn on JavaScript to view this website's content.</p></noscript>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Event Gallery</h1>
+        <p>Browse our gallery for inspiration for your next celebration.</p>
+      </div>
+    </section>
+
+    <!-- ===== GALLERY =====
+         HOW TO ADD YOUR OWN PHOTOS
+         1. Copy your photo into the folder  assets/images/gallery/
+            (use .jpg, about 1200 x 800 pixels, under 300 KB if possible).
+         2. Open js/config.js, find the "gallery" list, copy one line, paste it, and change:
+            src (the file path), category, caption, and alt (a short description of the photo).
+         3. Save and refresh. The photo appears in the grid and opens in the lightbox when clicked.
+         To REPLACE a sample photo, simply save your photo over the sample with the same file name. -->
+    <section class="section" aria-labelledby="gallery-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Venue, Decorations and Celebrations</h2>
+          <p>Discover venue arrangements, event decorations, table settings, and celebration themes. Select a category, then click any photo to enlarge it.</p>
+        </div>
+        <p class="sample-note" data-sample>The photos below are temporary sample images. Replace all of them with genuine business photographs before publishing.</p>
+        <div class="filter-bar" role="group" aria-label="Filter photos by category" data-render="gallery-filters"></div>
+        <p id="gallery-status" class="sr-only" role="status" aria-live="polite"></p>
+        <div class="gallery-grid" data-render="gallery"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark cta-band" aria-labelledby="cta-title">
+      <div class="container">
+        <h2 id="cta-title">Imagine Your Event Here</h2>
+        <p>Ready to plan your celebration? Send us an inquiry to check availability.</p>
+        <div class="btn-row">
+          <a class="btn btn-primary" href="inquire.html">Book Your Event</a>
+          <a class="btn btn-light" href="packages.html">View Our Packages</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

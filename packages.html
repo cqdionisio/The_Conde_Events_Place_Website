@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Event Packages | The Conde Events Place</title>
+  <meta name="description" content="Compare sample event packages at The Conde Events Place for birthdays, christenings, weddings, anniversaries, and reunions, or ask for a customized package.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Event Packages | The Conde Events Place">
+  <meta property="og:description" content="Event packages for different occasions and budgets.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="packages">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <noscript><p class="container">Please turn on JavaScript to view this website's content.</p></noscript>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Event Packages</h1>
+        <p>Options for different occasions and budgets. Not seeing the right fit? Ask for a customized package.</p>
+      </div>
+    </section>
+
+    <!-- ===== PACKAGES =====
+         To edit package names, prices, guests, duration, inclusions, decorations, catering,
+         amenities, and booking conditions, edit the "packages" list in js/config.js.
+         Each "Choose This Package" button opens the inquiry form with that package preselected. -->
+    <section class="section" aria-labelledby="packages-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Packages</p>
+          <h2 id="packages-title">Choose a Package</h2>
+        </div>
+        <!-- <p class="sample-note" data-sample><strong>Sample packages:</strong> all prices and inclusions below are examples only. They are not confirmed offers and must be confirmed before publishing.</p> -->
+        <div class="grid grid-2" data-render="packages"></div>
+      </div>
+    </section>
+
+    <section class="section section--dark" aria-labelledby="how-title">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">How It Works</p>
+          <h2 id="how-title">From Inquiry to Confirmed Booking</h2>
+        </div>
+        <div class="grid grid-3">
+          <div class="highlight reveal"><span class="icon" aria-hidden="true">1</span><h3>Send an Inquiry</h3><p>Choose a package (or tell us what you need) and your preferred date.</p></div>
+          <div class="highlight reveal"><span class="icon" aria-hidden="true">2</span><h3>We Get in Touch</h3><p>Our team contacts you to discuss availability and your event details.</p></div>
+          <div class="highlight reveal"><span class="icon" aria-hidden="true">3</span><h3>Booking Confirmed</h3><p>Your booking is confirmed only after we agree on the details with you.</p></div>
+        </div>
+        <div class="btn-row mt-2" style="justify-content:center">
+          <a class="btn btn-primary" href="inquire.html">Send an Inquiry</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

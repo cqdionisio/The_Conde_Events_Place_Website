@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Inquire or Book | The Conde Events Place</title>
+  <meta name="description" content="Send an inquiry or booking request to The Conde Events Place. Tell us your event type, preferred date, guest count, and package, and our team will contact you.">
+  <meta name="theme-color" content="#0a0a0a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Inquire or Book | The Conde Events Place">
+  <meta property="og:description" content="Send an event inquiry or booking request.">
+  <link rel="icon" type="image/png" href="assets/icons/favicon.png">
+  <link rel="apple-touch-icon" href="assets/icons/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;0,700;1,500&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.className += " js";</script>
+</head>
+<body data-page="inquire">
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div id="site-header"></div>
+
+  <main id="main">
+    <noscript><p class="container">Please turn on JavaScript to use the inquiry form. You can also email or call us using the details in the footer.</p></noscript>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Inquire or Book</h1>
+        <p>Tell us about your event. This sends an inquiry, and our team will contact you to discuss availability.</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <div class="container">
+
+        <!-- ===== INQUIRY FORM =====
+             Field labels can be edited below. The drop-down choices (event types, packages, services)
+             come from js/config.js. Where the form is sent is set in js/config.js > form.formspreeEndpoint.
+             Do not rename the field ids (fullName, phone, email, ...): js/booking.js uses them. -->
+        <!--<form id="inquiry-form" class="form-card" novalidate>
+          <h2 id="form-title">Event Inquiry Form</h2>
+          <p class="notice"><strong>Please note:</strong> this form sends an <em>inquiry</em>, not a confirmed booking. Your preferred date and time are <strong>subject to confirmation</strong> by our team. Fields marked <span class="req" aria-hidden="true">*</span> are required.</p>
+
+          <div class="form-grid">
+            <div class="field full">
+              <label for="fullName">Full Name <span class="req" aria-hidden="true">*</span></label>
+              <input id="fullName" name="fullName" type="text" autocomplete="name" required aria-required="true" aria-describedby="err-fullName">
+              <p class="field-error" id="err-fullName"></p>
+            </div>
+
+            <div class="field">
+              <label for="phone">Contact Number <span class="req" aria-hidden="true">*</span></label>
+              <input id="phone" name="phone" type="tel" inputmode="tel" autocomplete="tel" placeholder="0912-345-6789" required aria-required="true" aria-describedby="err-phone">
+              <p class="field-error" id="err-phone"></p>
+            </div>
+
+            <div class="field">
+              <label for="email">Email Address <span class="req" aria-hidden="true">*</span></label>
+              <input id="email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="name@example.com" required aria-required="true" aria-describedby="err-email">
+              <p class="field-error" id="err-email"></p>
+            </div>
+
+            <div class="field">
+              <label for="eventType">Event Type <span class="req" aria-hidden="true">*</span></label>
+              <select id="eventType" name="eventType" required aria-required="true" aria-describedby="err-eventType"></select>
+              <p class="field-error" id="err-eventType"></p>
+            </div>
+
+            <div class="field">
+              <label for="guests">Estimated Number of Guests <span class="req" aria-hidden="true">*</span></label>
+              <input id="guests" name="guests" type="number" inputmode="numeric" min="1" step="1" required aria-required="true" aria-describedby="err-guests">
+              <p class="field-error" id="err-guests"></p>
+            </div>
+
+            <div class="field">
+              <label for="eventDate">Preferred Event Date <span class="req" aria-hidden="true">*</span></label>
+              <input id="eventDate" name="eventDate" type="date" required aria-required="true" aria-describedby="hint-date err-eventDate">
+              <p class="field-hint" id="hint-date">Subject to confirmation of availability.</p>
+              <p class="field-error" id="err-eventDate"></p>
+            </div>
+
+            <div class="field">
+              <label for="eventTime">Preferred Event Time <span class="req" aria-hidden="true">*</span></label>
+              <input id="eventTime" name="eventTime" type="time" required aria-required="true" aria-describedby="err-eventTime">
+              <p class="field-error" id="err-eventTime"></p>
+            </div>
+
+            <div class="field">
+              <label for="package">Selected Package</label>
+              <select id="package" name="package"></select>
+              <p class="field-hint">Package prices on this website are samples and subject to confirmation.</p>
+            </div>
+
+            <div class="field">
+              <label for="budget">Budget <span class="optional">(optional)</span></label>
+              <input id="budget" name="budget" type="text" maxlength="60" placeholder="e.g. &#8369;40,000" aria-describedby="hint-budget err-budget">
+              <p class="field-hint" id="hint-budget">An estimate helps us suggest suitable options.</p>
+              <p class="field-error" id="err-budget"></p>
+            </div>
+
+            <fieldset class="field full">
+              <legend>Additional Services</legend>
+              <div class="checks" id="services-options"></div>
+            </fieldset>
+
+            <div class="field full">
+              <label for="message">Special Requests or Message</label>
+              <textarea id="message" name="message" placeholder="Tell us about your theme, preferred setup, or any questions."></textarea>
+            </div>
+
+            <!~~ Spam trap: hidden from real visitors. Leave this as it is. ~~>
+            <div class="honeypot" aria-hidden="true">
+              <label for="_gotcha">Leave this field empty</label>
+              <input id="_gotcha" name="_gotcha" type="text" tabindex="-1" autocomplete="off">
+            </div>
+
+            <div class="field full">
+              <!~~ PRIVACY NOTICE: review and edit this wording so it matches how you actually handle customer information. ~~>
+              <p class="privacy"><strong>Privacy notice:</strong> the details you submit (your name, contact information, and event details) are used only to respond to your inquiry and to discuss your event with you. They are sent to our team by email through our online form service.</p>
+              <div class="check">
+                <input type="checkbox" id="consent" name="consent" required aria-required="true" aria-describedby="err-consent">
+                <label for="consent">I have read the privacy notice and agree to be contacted about my inquiry. <span class="req" aria-hidden="true">*</span></label>
+              </div>
+              <p class="field-error" id="err-consent"></p>
+            </div>
+          </div>
+
+          <div class="form-actions">
+            <button class="btn btn-primary" id="submit-btn" type="submit">Submit Inquiry</button>
+          </div>
+
+          <div id="form-status" class="status" hidden></div>
+        </form>
+      -->  
+
+        <!-- ===== CONTACT DETAILS (from js/config.js > business) ===== -->
+        <aside class="side-card" aria-labelledby="contact-title">
+          <h2 id="contact-title">Prefer to talk?</h2>
+          <p>Reach us directly using the details below.</p>
+           <ul class="contact-list">
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-pin.svg" alt="" width="20" height="20"></span><address class="address-block" data-bind="business.address"></address></li>
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-phone.svg" alt="" width="20" height="20"></span><a data-link="tel" data-bind="business.phoneDisplay" href="#"></a></li>
+            <li><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/contact-email.svg" alt="" width="20" height="20"></span><a data-link="mail" data-bind="business.email" href="#"></a></li>
+            <li data-link-wrap="facebook"><span class="ci" aria-hidden="true"><img class="all-icon" src="assets/icons/facebook.svg" alt="" width="20" height="20"></span><a data-link="facebook" href="#" target="_blank" rel="noopener">Facebook Page </a></li>
+          </ul>
+          <div class="map-wrap" data-render="map"></div>
+          <p class="mt-2"><a class="btn btn-light btn-sm" data-link="directions" href="#" target="_blank" rel="noopener">Get Directions</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/booking.js"></script>
+</body>
+</html>
