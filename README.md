@@ -1,6 +1,6 @@
 # THE CONDE EVENTS PLACE: Website Project 
 
-1111A complete, responsive website for The Conde Events Place (HTML, CSS, JavaScript).
+1111A complete, responsive website for The Conde Events Place (HTML, CSS, JavaScript).12312414
 It has six linked pages, a black-and-gold design matched to your logo, a photo gallery with lightbox, and an inquiry/booking-request form that emails your Gmail through a free **Google Apps Script** (setup in Step 4).
 
 > **Draft status:** every price, package, capacity, testimonial, photo, address, phone number, and the email address are **samples** until you replace them. While `showSampleNotices` is `true` in `js/config.js`, the site shows a "Draft preview" banner and "Sample" badges. See the **Before You Publish checklist** at the bottom.
