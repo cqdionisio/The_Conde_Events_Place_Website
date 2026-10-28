@@ -340,7 +340,11 @@ window.SITE_CONFIG = {
     { src: "assets/images/gallery/decorations-1.jpg", category: "Decorations", caption: "Party decorations", alt: "Sample placeholder image of party decorations. Replace with your photo.", featured: true },
     { src: "assets/images/gallery/tables-1.jpg", category: "Tables and Chairs", caption: "Table and chair arrangement", alt: "Sample placeholder image of a table and chair arrangement. Replace with your photo." },
     { src: "assets/images/gallery/catering-1.jpg", category: "Catering", caption: "Catering and food presentation", alt: "Sample placeholder image of catering and food presentation. Replace with your photo." },
-    { src: "assets/images/gallery/photobooth-1.jpg", category: "Photobooth", caption: "Photobooth setup", alt: "Sample placeholder image of a photobooth setup. Replace with your photo.", featured: true }
+    { src: "assets/images/gallery/photobooth-1.jpg", category: "Photobooth", caption: "Photobooth setup", alt: "Sample placeholder image of a photobooth setup. Replace with your photo.", featured: true },
+      { src: "assets/images/gallery/photobooth-11.jpg", category: "Testing", caption: "Testing setup", alt: "Sample placeholder image of a Testing setup. Replace with your photo.", featured: true },
+      { src: "assets/images/gallery/photobooth-11.jpg", category: "Testing", caption: "Testing setup", alt: "Sample placeholder image of a Testing setup. Replace with your photo.", featured: true },
+      { src: "assets/images/gallery/photobooth-11.jpg", category: "Testing", caption: "Testing setup", alt: "Sample placeholder image of a Testing setup. Replace with your photo.", featured: true },
+      { src: "assets/images/gallery/photobooth-11.jpg", category: "Testing", caption: "Testing setup", alt: "Sample placeholder image of a Testing setup. Replace with your photo.", featured: true }
   ],
 
   /* ===================================================================
